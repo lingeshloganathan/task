@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>youtube</title>
+        <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .subscribe-button {
+            background-color: #ff0000;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .subscribe-button:hover {
+            background-color: #cc0000;
+        }
+        </style>
+    </head>
+    <body>
+        <main>
+        <a href="https://www.youtube.com/" target="_blank" style="text-align: center;">
+            <img src="youtube-logo.png" style="width: 85px;" alt="YouTube Logo">
+        </a>
+        <br><br>
+        <div class="search-bar"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 20px; width: 20px">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 
+                113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 
+                416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
+            </svg>
+            <i class="fa-solid fa-bars"></i>         
+            <input type="text" name="search" placeholder="Search videos...">
+            <br>
+            <br>       
+        </div>
+        <iframe id="videoplay" width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=kz95VmJpHjjfykPI" frameborder="0" allowfullscreen>
+        </iframe>
+        <h3>
+            HTML Introduction for Beginners | Guide to begin web development
+        </h3>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <a href="https://www.youtube.com/@w3schools">
+                <img src="w3schools.png" width="30" height="30">
+            </a>
+      
+            <div style="margin-left: 10px;">
+              <a href="https://www.youtube.com/@w3schools">
+                <h5 style="margin: 0;"><b>w3schools</b></h5></a>
+                <h6 style="margin: 0;">322k Subscribers</h6>
+            </div>
+            <div style="margin-left:50px;">
+              <button>Like</button>
+              <button>Unlike</button>
+              <button>Share</button>
+              <button>Download</button>
+            </div>
+          </div>
+          <br>
+          <br>
+        <button id="playButton" onclick="playVideo()">Play</button>
+        <button class="subscribe-button" onclick="openForm()">Subscribe</button>
+        <h3>90,213 views Mar 8, 2024</h3>
+        <p>Why This Video is Perfect for You:</p>
+        <p>This video is a short introduction to HTML.
+            <br>
+            <br>
+            Part of a series of video tutorials to learn HTML for beginners!
+            <br>
+    </main>
+        <script>
+            function openForm() {
+                window.open("personaldetails.html","_blank");
+            }
+        </script>
+    </body>
+</html>
